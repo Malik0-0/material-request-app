@@ -1,0 +1,127 @@
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table th {
+  background-color: #f3f4f6;
+}
+
+.table td:first-child {
+  min-width: 160px;
+}
+
+.tableRowHover:hover {
+  background-color: #f9fafb;
+}
+
+.actionsCell {
+  white-space: nowrap;
+  text-align: right;
+  vertical-align: middle;
+  width: 1%;
+  min-width: 148px;
+}
+
+.actionsCell > * + * {
+  margin-left: 8px;
+}
+
+.actionsCell .actionBtn,
+.actionsCell .dangerBtn,
+.actionsCell .tablePrimaryBtn {
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+.actionBtn {
+  display: inline-block;
+  margin-right: 8px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #111827;
+  text-decoration: none;
+}
+
+.actionBtn:last-child {
+  margin-right: 0;
+}
+
+.actionBtn:hover:not(:disabled) {
+  background-color: #f9fafb;
+}
+
+.actionBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dangerBtn {
+  display: inline-block;
+  margin-right: 0;
+  border: 1px solid #b91c1c;
+  background-color: #dc2626;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dangerBtn:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+.dangerBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tablePrimaryBtn {
+  display: inline-block;
+  border: 1px solid #111827;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tablePrimaryBtn:hover:not(:disabled) {
+  background-color: #1f2937;
+}
+
+.tablePrimaryBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tableInput {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #eeeeef;
+  border-radius: 6px;
+  padding: 6px 8px;
+  background-color: rgb(210, 210, 213);
+  color: #111827;
+  font-size: 14px;
+}

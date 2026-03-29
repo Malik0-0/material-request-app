@@ -1,0 +1,67 @@
+.page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background-color: #f7f7f7;
+}
+
+.main {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.createLink {
+  border: 1px solid #111827;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.createLink:hover {
+  background-color: #1f2937;
+}
+
+.infoText {
+  color: #4b5563;
+  padding: 12px 0;
+}
+
+.errorText {
+  color: #b91c1c;
+  padding: 12px 0;
+}
+
+.clickableRow {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 16px;
+  }
+
+  .headerRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

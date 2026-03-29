@@ -1,0 +1,31 @@
+{
+  "name": "material-request-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "build": "nest build"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.8",
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/core": "^11.1.8",
+    "@nestjs/platform-express": "^11.1.8",
+    "@nestjs/typeorm": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "pg": "^8.20.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.28"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.10",
+    "@nestjs/schematics": "^11.0.9",
+    "@nestjs/testing": "^11.1.8",
+    "@types/node": "^22.13.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

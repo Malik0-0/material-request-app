@@ -1,0 +1,154 @@
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 14px;
+  color: #374151;
+}
+
+.field input {
+  border: 1px solid #eeeeef;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background-color: rgb(210, 210, 213);
+  color: #111827;
+}
+
+.field input[type='date']::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: brightness(0);
+}
+
+.sectionTitle {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.materialCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.materialActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.button {
+  border: 1px solid #d1d5db;
+  background: #171717;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.buttonSave {
+  border: 1px solid #15803d;
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.buttonSave:hover:not(:disabled) {
+  background: #15803d;
+}
+
+.buttonBack {
+  border: 1px solid #b91c1c;
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.buttonBack:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.actionsLeft {
+  display: flex;
+  gap: 10px;
+}
+
+.actionsRight {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.hint {
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.errorText {
+  margin-top: 10px;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.validationText {
+  margin-top: 10px;
+  color: #b45309;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 16px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actionsRight {
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+}
