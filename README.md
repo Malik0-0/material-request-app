@@ -99,7 +99,7 @@ Validation is applied in **two places**: the UI blocks obvious mistakes before `
 ## Project layout
 
 ```
-SMOE/
+Material-Request-App/
 ├── backend/          # NestJS API
 ├── frontend/         # Next.js app
 └── database/         # SQL schema (PostgreSQL)
